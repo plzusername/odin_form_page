@@ -1,3 +1,6 @@
+:root{
+    --marg-left:50px;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,9 +8,11 @@
 }
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex; 
     height: 100vh;
     overflow: hidden;
+    width: 100%;
+    display: flex;
+    background-color: rgb(245, 245, 245);
 }
 img[src^='./halie']{
     width: clamp(200px,30%,600px);
@@ -21,6 +26,7 @@ img:not([src^='./halie']){
     width: 100px;
     filter: opacity(1);
 }
+
 .odin-face{
     background-color: #000000;
     opacity: 0.7;
@@ -47,3 +53,60 @@ img:not([src^='./halie']){
 .credit a{
     color: white;
 }
+.column label{
+    display:block;
+}
+.col-container{
+    display: flex;
+    justify-content: start;
+    gap:80px;
+}
+
+.column{
+    margin-left: var(--marg-left);
+}
+.form-container-page  p, .form-container-page button{
+    margin-left: var(--marg-left);
+}
+.form-container-page> p:first-child{
+    margin-top: 100px;
+    width: 310px;
+}
+.form-container-page>p:nth-child(2){
+    margin:20px 50px
+}
+.form p{
+    margin: 25px 50px;
+    padding-top: 7px;
+}
+.form{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    box-shadow: 8px 5px 8px rgb(235,235,235);
+}
+.form-container-page{
+    flex:1;
+}
+input{
+    appearance: none;
+    border-radius: 3px;
+    border: none;
+    border: 2px solid #E5E7EB;
+}
+input:focus{
+    appearance: none;
+    outline: none;
+    border:2px solid rgb(85,85,255);
+    box-shadow: 5px 5px 5px rgb(220,220,220);
+}
+button{
+    color:white;
+    background-color:#596D48 ;
+    padding:15px 25px;
+    border: none;
+    box-shadow: 5px 5px 5px rgb(220,220,220);
+    border-radius: 5px;
+    margin:20px;
+}
+p{font-weight: bold;}
