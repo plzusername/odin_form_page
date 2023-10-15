@@ -109,4 +109,15 @@ button{
     border-radius: 5px;
     margin:20px;
 }
+button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
 p{font-weight: bold;}
+.form-container-page > p:last-of-type{
+    margin-top: 25px;
+}
+.error.specify{
+    border:2px solid rgb(200,50,50);
+    box-shadow: 5px 5px 5px rgb(220,220,220);
+}
