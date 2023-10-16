@@ -117,7 +117,7 @@ p{font-weight: bold;}
 .form-container-page > p:last-of-type{
     margin-top: 25px;
 }
-.error.specify{
+.error{
     border:2px solid rgb(200,50,50);
     box-shadow: 5px 5px 5px rgb(220,220,220);
 }
